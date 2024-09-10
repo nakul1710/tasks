@@ -1,0 +1,19 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    visibility: hidden;
+}
+.box:hover{
+  visibility: hidden;
+}
+
+.big-boss{
+  height: 200px;
+  width: 200px;
+  background-color: purple;
+}
+
+.big-boss:hover .box{
+    visibility:visible;
+}
