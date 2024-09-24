@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: var(--mont-font);
 }
 :root {
     --primary-color: #2a3855;
@@ -41,13 +42,15 @@
 }
 
 header nav{
+    position: sticky;
+    top: 0px;
     background-color:#ffffff;
     color: var(--primary-color);
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
-    opacity:calc(0.8);
+    opacity:calc(0.99);
 }
 
 header nav .nav-bar{
@@ -137,4 +140,141 @@ header .text .btn .contact{
     font-weight: 700;
     background: #fcd529;
     border-radius: 5px;
+}
+.welcome-elixir{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     margin-top: -550px;
+     font-family: var(--primary-color);
+}
+.welcome-elixir .welcome {
+    position: absolute;
+    left: 546px;
+}
+.welcome-elixir .welcome h2 {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    color: #2a3855;
+    font-size:40px ;
+}
+
+.welcome-elixir .welcome p{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    color: gray;
+    font-size: 20px;
+    max-width: 530px;
+    text-align: center;
+}
+.welcome-elixir .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 40px;
+    top: 260px;
+    left: 40px;
+}
+.welcome-elixir .card h4{
+    display: flex;
+    justify-content: center;
+   color: var(--primary-color);
+   font-size: 20px;
+   font-family: var(--mont-font);
+}
+.welcome-elixir .card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+.welcome-elixir .card p{
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+    color: gray;
+   font-size: 15px;
+   font-weight: 100;
+    word-spacing: 5px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.properties{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    position: relative;
+}
+.properties .video iframe{
+    display: flex;
+    height: 700px;
+    width: 1300px;
+    border-radius: 20px;
+}
+
+.properties .prop-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1050px;
+    margin: 5%;
+    gap: 30px;
+}
+.properties .prop-card .pc1 h2{
+  color: var(--primary-color);  
+}
+.properties .prop-card .pc1 p{
+    word-spacing: 3px;
+    color: gray;
+    max-width: 280px;
+    font-weight: 100 ;
+}
+.properties .prop-card .pc2 p{
+    color: gray;
+    max-width: 280px;
+   font-weight: 100 ;
+}
+.properties .prop-card .pc3 p{
+    color: gray;
+    max-width: 280px;
+    font-weight: 100 ;
+}
+
+.properties .prop-card .pc1 .logo{
+    display: inline-block;
+}
+.our-services {
+    background-color: rgb(250,250,250);
+    padding: 50px;
+}
+.our-services h1{
+    text-align: center;
+    color: #2a3855;
+    font-size: 40px;
+}
+.our-services{
+    position: relative;
+}
+
+.our-services .colage{
+    max-width: 1300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 300px;
+    flex-direction: column;
+}
+.business .img1{
+    float: left;
+}
+.Tax .img2{
+    float: right;
 }
