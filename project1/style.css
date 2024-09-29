@@ -150,4 +150,79 @@
 .arrival-text p{
     color: rgb(60, 60, 60);
 }
+.our-products{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 30px;
+}
+.our-products h1 span{
+    color: #f7444e;
+}
+.our-products h1::after{
+    content: "";
+    height: 5px;
+    width: 70px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translate();
+}
+ .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 10%;
+    margin-top: 60px;
+    padding: 10px;
+}
+
     
+ .grid-item {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  height: 300px;
+  width: 800px;
+  font-size: 30px;
+  text-align: center;
+  background: #F7F8F9;
+}
+.grid-item p {
+  font-size: 16px;
+}
+ .grid-item:hover .btn{
+    position: absolute;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item:hover .btn .b1{
+    background: red;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    
+}
+.grid-item:hover .btn .b2{
+    background: #ffff;
+    color: black;
+    border-radius: 50px;
+    padding: 10px;
+}
+.grid-item:hover .btn .b2:hover{
+    background: black;
+    color: white;
+}
+.grid-item:hover{
+    background: rgba(201, 201, 201, 0.321);
+    filter:saturate(0);
+    visibility: visible;
+}

@@ -259,12 +259,12 @@ header .text .btn .contact{
     color: #2a3855;
     font-size: 40px;
 }
-.our-services{
-    position: relative;
-}
 
+.sec1{
+    background-color:#FAFAFA ;
+}
 .our-services .colage{
-    max-width: 1300px;
+    border-radius: 30px;
     align-items: center;
     display: flex;
     justify-content: center;
