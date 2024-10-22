@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+ background-color: #00e37d;
+}
+.apple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.description{
+    height: 500px;
+    width: 700px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    
+}
+.description .d1{
+    margin-top: 40px;
+    margin-left: 214px;
+    float: left;
+
+}
+.description .d1 p{
+    color: grey;
+
+}
+.description .d1 h1{
+    word-spacing: 5px;
+    color: #534c48;
+}
+.description .d1 .price {
+    color: red;
+    margin-top: 50px;
+}
+.description .d1 .price span{
+    font-size: 30px;
+}
+.description .d1 ul li{
+    list-style-type:none;
+}
+.description .d1 button{
+    margin-top: 25px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 5px;
+    word-spacing: 2px;
+    width: 150px;
+}
+.img{
+    position: absolute;
+    top:280px;
+    left: 455px;
+}
+.img img{
+    box-shadow: 3px 3px rgb(217, 218, 211)  ;
+    border-radius: 7px;
+}

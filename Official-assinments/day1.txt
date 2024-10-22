@@ -1,0 +1,201 @@
+HTML & CSS Day1
+
+
+1. Introduction to HTML:
+   
+    Question:a Create a simple HTML document that displays the text "Hello, World!" in the browser.
+
+    Ans: 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+      <p>Hello world!</p>
+    </body>
+    </html>
+
+
+    Question:b Explain the purpose of the <meta> tag in the <head> section of an HTML document.
+
+    Ans: The <meta> tag in the <head> section of an HTML document provides metadata, which is information about the HTML document itself.
+     Metadata is not displayed on the page but is essential for browsers, search engines, and web crawlers to understand and interpret 
+     the webpage content correctly.
+
+         b1: <meta charset="UTF-8"> : This declares that the webpage uses UTF-8 encoding, which supports many international characters.
+         b2: <meta name="viewport" content="width=device-width, initial-scale=1.0"> : This tells the browser to scale the page to the
+          width of the device’s screen, making it mobile-friendly.
+         b3: <meta http-equiv="refresh" content="30">: This refreshes the page every 30 seconds.
+  
+
+
+
+2. HTML Document Structure:
+
+
+    Question:a What does the DOCTYPE declaration <!DOCTYPE html> indicate, and why is it important?
+
+    Ans: The <!DOCTYPE html> declaration at the beginning of an HTML document indicates the document type and helps browsers
+     understand which version of HTML the webpage is written in. Specifically, <!DOCTYPE html> declares that the document is
+     written in HTML5, the latest version of HTML.
+
+
+     Question:b What is the ‘class' attribute in HTML?
+
+     Ans:The class attribute in HTML is used to define a group or "class" of elements that can share the same style or behavior.
+      It helps in identifying elements on the webpage so that they can be targeted with CSS for styling.
+
+
+3. HTML Elements and Tags:
+   
+   Question:a Do all HTML tags have an end tag?
+   Ans: No, not all HTML tags require an end tag. HTML tags can be categorized into two types based on whether they need an end tag:
+    self-closing tags (void elements) and non-self-closing tags (which require both opening and closing tags).
+
+
+        a1. self-closing tags(void elements): These tags do not have content, and therefore, they don't require a closing tag.
+            ex: <img> <br>,<hr>,<meta>,<input> etc...
+     
+       a2. Non-Self-Closing Tags:: hese tags require both an opening tag and a corresponding closing tag.
+         ex:<div></div>,<p></p>,<h1></h1> etc...
+
+
+   Question:b What is the role of the <head> tag in HTML?
+
+   Ans: The <head> tag in HTML plays a critical role in defining metadata and other resources related to the HTML document.
+   It is located at the top of the HTML file, right below the <!DOCTYPE> declaration, and it contains information that is 
+   not displayed directly on the webpage but is essential for the document's functionality, behavior, and optimization.
+
+
+   Question:c What is the role of the <meta> tag in HTML?
+
+   Ans: The <meta> tag in the <head> section of an HTML document provides metadata, which is information about the HTML document itself.
+     Metadata is not displayed on the page but is essential for browsers, search engines, and web crawlers to understand and interpret 
+     the webpage content correctly.
+
+         b1: <meta charset="UTF-8"> : This declares that the webpage uses UTF-8 encoding, which supports many international characters.
+         b2: <meta name="viewport" content="width=device-width, initial-scale=1.0"> : This tells the browser to scale the page to the
+          width of the device’s screen, making it mobile-friendly.
+         b3: <meta http-equiv="refresh" content="30">: This refreshes the page every 30 seconds.
+  
+
+
+
+4. HTML Attributes:
+   
+
+   Question:a Enhance a hyperlink to open in a new tab when clicked using an HTML attribute.
+
+   Ans:  To enhance a hyperlink so that it opens in a new tab when clicked, you can use the target attribute in the <a> 
+   (anchor) tag and set its value to _blank. This tells the browser to open the linked page in a new tab or window.
+
+
+   <a href="https://www.example.com" target="_blank">Visit Example</a>
+
+  Question:b Implement an image element with an alt attribute to ensure accessibility.
+
+  Ans: To implement an accessible image element in HTML, use the <img> tag along with the alt attribute. The alt attribute provides
+   alternative text that describes the image, which is crucial for accessibility, particularly for visually impaired users who rely
+    on screen readers.
+
+  <img src="image.jpg" alt="A description of the image">
+
+
+ Question:c What is the difference between the ‘id' and ‘class' attributes of HTML elements?
+ 
+ Ans:The id and class attributes in HTML are both used to assign identifiers to elements, but they serve different purposes and 
+ have distinct characteristics:-
+
+
+ ID:  The id attribute is unique within an HTML document. Each element can have only one id, and no two elements can share the
+  same id value. This makes id ideal for targeting a single, specific element.
+
+  <div id="header">This is the header</div>
+
+
+ CLASS: The class attribute is reusable. Multiple elements can share the same class, allowing you to apply the same styles or
+  behaviors to a group of elements. An element can also have multiple classes. 
+   
+   <div class="menu">This is a menu</div>
+   <p class="menu">This is another menu item</p>
+
+
+
+5. Text Formatting Tags (e.g., <h1>, <p>, <strong>, <em>):
+
+Ans: HTML provides various text formatting tags that help structure and style the content of web pages. These tags define how
+ the text should be displayed, offering various styling options for headings, paragraphs, emphasis, and other elements.
+
+
+ 1. <h1> to <h6> (Headings)
+  These tags define headings, from <h1> (the most important/large heading) to <h6> (the least important/smallest heading).
+  <h1>Main Heading</h1>
+  <h2>Subheading</h2>
+
+
+  2. <p> (Paragraph)
+    The <p> tag is used to define a block of text as a paragraph. Browsers automatically add some margin or padding around paragraphs.
+    <p>This is a paragraph of text.</p>
+
+
+  3.<strong> (Bold Text)
+
+   The <strong> tag is used to emphasize text, displaying it in bold. It indicates that the enclosed text has strong importance.
+   <p>This is <strong>important</strong> text.</p>
+
+
+  4.<b> (Bold Text)
+
+   Similar to <strong>, the <b> tag makes text bold, but without implying any special importance. 
+   <p>This is <b>bold</b> text.</p>
+
+
+ 5.<i> (Italicized Text)
+   Similar to <em>, the <i> tag italicizes text, but without indicating emphasis or stress.
+   <p>This is <i>italicized</i> text.</p>
+
+
+ 6.<u> (Underlined Text)
+
+   The <u> tag is used to underline text.
+   p>This is <u>underlined</u> text.</p>  
+
+
+  7. <mark> (Highlighted Text)
+
+The <mark> tag highlights text with a yellow background, indicating marked or highlighted text.
+<p>This is <mark>highlighted</mark> text.</p>
+
+
+8.<del> (Strikethrough Text)
+The <del> tag renders text with a strikethrough to show that it has been deleted.
+<p>This is <del>struck-through</del> text.</p>
+
+
+9. <sup> (Superscript)
+
+This tag displays text in superscript, often used for footnotes or mathematical notations.
+E = mc<sup>2</sup>
+
+
+10. <sub> (Subscript)
+This tag displays text in subscript, often used for chemical formulas or mathematical equations.
+H<sub>2</sub>O
+
+
+
+
+
+
+
+
+
+
+
+
+

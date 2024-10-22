@@ -1,0 +1,175 @@
+1. Creating Hyperlinks (<a> element):
+
+ Question:1a Explain the purpose of the <a> element in HTML and how it is used to create hyperlinks.
+
+ Ans: The <a> (anchor) element in HTML is primarily used to create hyperlinks, allowing users to navigate between different
+  web pages, sections within the same page, or other resources such as documents or email addresses.
+ 
+  Purpose of the <a> Element:
+  The <a> element is crucial for enabling navigation across the web. It links content to URLs (Uniform Resource Locators), facilitating
+  movement from one resource to another.
+
+Question:1b How can you differentiate between an external link and an internal link using the <a> element?
+
+Ans: 
+1. External Link:An external link directs the user to a resource on a different website.
+The href value for an external link usually includes a full URL starting with http://, https://, or another protocol
+ like ftp://.
+  ex- <a href="https://www.example.com">External Link</a>
+
+
+ 2. Internal Link: An internal link directs the user to a resource within the same website or domain.
+ ex-<a href="/about.html">Internal Link</a>
+ 
+Question:1c Create a navigation menu with links to three different sections of a single page using anchors.
+  Ans: answer was in day2.html
+
+
+
+2. Linking to Other Web Pages:
+
+Question: What is the difference between an absolute and relative URL?
+Ans:The difference between absolute and relative URLs lies in the way they reference web resources:
+1. Absolute URL:
+ An absolute URL contains the full path to a resource, starting from the protocol (http:// or https://), the domain name, and the
+ specific file path.
+ It is a complete address that works independently of the current location of the document. 
+eg: <a href="https://www.example.com/images/picture.jpg">View Image</a>
+
+
+
+2. Relative URL:
+A relative URL specifies a resource relative to the current document's location. It does not contain the protocol or domain and only
+ references the file path within the website.
+ eg: <a href="/images/picture.jpg">View Image</a>
+
+
+3. Linking to Email Addresses:
+
+Ans: Answer is at day2.html
+
+4.Linking to Files (PDFs, Images, etc.):
+
+Question:4a Develop a page that has a link to download a sample PDF document. The link should open the PDF in a new tab.
+
+Ans: 
+<a href="sample.pdf" target="_blank" download="SampleDocument.pdf">
+        Download Sample PDF
+ </a>
+
+
+5. Creating Anchors (<a> with name or id attributes):
+
+Question:5a Compare and contrast using the name attribute and the id attribute when creating anchors for linking within a page.
+ Which one is preferred in modern HTML?
+ANS: The name and id attributes were both historically used to create anchors for linking to specific sections of a webpage, but
+ they have different purposes and usage, especially in modern HTML.
+
+ 1. name Attribute:
+The name attribute was originally used with the <a> element to create named anchors for linking within a page.
+
+<a name="section1"></a>
+
+The name attribute specifically worked with the <a> tag to create a location to which you could link, but it only worked for anchors.
+
+Deprecated: In modern HTML (since HTML5), the name attribute for anchors has been deprecated, meaning it is no longer recommended for
+ use, though it might still work in older browsers.
+
+2.id Attribute:
+The id attribute can be used with any HTML element to create an anchor point.
+
+<h2 id="section1">Section 1</h2>
+
+The id attribute must be unique within the document, meaning no two elements on the same page can share the same id.
+
+You can link to an element using id by referencing it in an anchor (href="#section1"), and it works across all HTML elements, making
+ it more versatile.
+
+It is the preferred method in modern HTML for creating anchors for internal linking.
+
+
+Questions:5b Design a simple website with a navigation menu that links to an "About," "Portfolio," and "Contact" page.
+Ans: Answer at day2.html
+
+
+6.Creating Navigation Menus:
+
+Question: What are the advantages of using an unordered list (<ul>) to create a navigation menu instead of simply styling individual links?
+Ans: Using an unordered list (<ul>) to create a navigation menu in HTML has several advantages over simply styling individual links
+ (<a> elements). Here are the key benefits:
+
+1. Semantic Structure:
+Improved Accessibility: Screen readers and assistive technologies can better interpret a navigation menu when it is structured as a list.
+ A <ul> provides a clear, hierarchical structure that indicates the items are part of a group, improving accessibility for users with 
+ disabilities.
+
+SEO (Search Engine Optimization): Search engines prioritize well-structured and semantically correct HTML. Using a <ul> for navigation 
+helps search engines understand that the links are part of a related navigation group.
+
+
+2. Organized Markup:
+Easier to Manage: A <ul> provides an easy-to-manage way to group navigation items, especially when dealing with complex menus or
+ multiple levels (such as dropdowns or sub-menus). This makes the code more maintainable.
+
+
+Consistent Styling: When using a <ul>, you can apply styles to all menu items (inside <li> tags) uniformly, making it easier
+ to control appearance, padding, spacing, and alignment.
+
+
+7. Ordered and Unordered List:
+
+Question:7a Differentiate between an Ordered list and an Unordered list? Explain with example.
+
+1. Ordered List (<ol>):
+An ordered list displays items in a specific sequence, with numbers, letters, or Roman numerals automatically added before each
+item to indicate the order.
+Use Case: When the order or sequence of items matters, such as in step-by-step instructions or rankings.
+EX:
+<ol>
+   <li>First item</li>
+   <li>Second item</li>
+   <li>Third item</li>
+</ol>
+O/P:
+1.First item
+2.Second item
+3.Third item
+
+
+2. Unordered List (<ul>):
+An unordered list displays items without any particular order. Instead of numbers, each item is preceded by a bullet point (default)
+or a custom marker.
+Use Case: When the order of items does not matter, such as when listing features, ingredients, or options.
+Ex:
+<ul>
+   <li>Apples</li>
+   <li>Bananas</li>
+   <li>Cherries</li>
+</ul>
+
+
+O/P:
+.Apples
+.Bananas
+.Cherries
+
+
+Question:7b What are the different types of lists in HTML?
+
+Ans: Different types of lists-
+  1.Ordered List (<ol>)
+  2.Unordered List (<ul>)
+  3.Description List (<dl>)
+
+
+
+
+
+
+
+
+
+
+
+
+

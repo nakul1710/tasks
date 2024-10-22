@@ -1,0 +1,5 @@
+1. Form Structure (<form> element):
+
+
+Question:a Explain the purpose of the <form> element in HTML and how it is used to create interactive forms on web pages.
+Ans: The <form> element in HTML is used to create interactive forms that allow users to enter and submit data to a web server for processing. Forms are a crucial part of web development, enabling functionalities such as user registration, login, feedback, and data collection.
