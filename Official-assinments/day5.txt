@@ -1,0 +1,172 @@
+1.Incorporate the following in a single HTML document. BOLD, ITALICS, SMALL, SUPERSCRIPT, SUBSCRIPT, UNDERLINE
+Ans:Here’s an HTML document that incorporates the following text formatting elements:
+ BOLD, ITALICS, <small>SMALL</small>, <sup>SUPERSCRIPT</sup>, <sub>SUBSCRIPT</sub>, and <u>UNDERLINE</u>.
+Bold: The <b> tag is used to bold text.
+Italics: The <i> tag is used to italicize text.
+Small: The <small> tag renders text in a smaller font.
+Superscript: The <sup> tag raises the text as a superscript.
+Subscript: The <sub> tag lowers the text as a subscript.
+Underline: The <u> tag underlines the text.
+
+2.What is the role of the following tags: -
+.<pre>
+.<tt>
+ Ans:<pre>: Used for preformatted text (retains line breaks, spaces, and uses monospaced fonts).
+<tt>: Displays monospaced text, but is now obsolete and replaced by CSS.
+
+
+3.Display the following equation in your page – 34x+54x3+62x2+2x0=0
+Ans: 
+    <p>34x + 54x<sup>3</sup> + 62x<sup>2</sup> + 2x<sup>0</sup> = 0</p>
+
+
+4.Display the following Text “India is my country” centre aligned on the page.
+Ans: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Aligned Text</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <p>India is my country</p>
+</body>
+</html>
+
+
+5.Display the following chemical symbols on the page.
+H2O
+H2SO4
+HNO3
+
+Ans:<p>H<sub>2</sub>O</p>
+    <p>H<sub>2</sub>SO<sub>4</sub></p>
+    <p>HNO<sub>3</sub></p>
+
+
+6.What is the role of <hr>tag? What are the various attributes it can take?
+ Ans: The <hr> tag in HTML stands for "horizontal rule." It is used to create a thematic break in the
+  content, typically represented as a horizontal line. This element is often used to separate sections
+   of content visually, providing a visual cue to the reader.   
+
+7.How do you give comments inside your source codes
+Ans: HTML Comments-
+     <!-- This is a comment -->
+     JavaScript:
+     Single-line comments: // This is a comment
+     Multi-line comments: /* This is a comment */
+     CSS:
+     Comments are created using: /* This is a comment */
+
+
+8.Display the follow on the page.
+.67 >23
+.x >= a <= b
+Ans: <p>67 &gt; 23</p>
+    <p>x &gt;= a &lt;= b</p>
+
+
+9.How do you display a textbox for accepting password from the user
+Ans: form action="/submit" method="post">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Submit">
+    </form>
+
+10.Create a form with all the attributes and the tags available.
+Ans:<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Form Example</title>
+</head>
+<body>
+    <h2>User Registration Form</h2>
+    <form action="/submit" method="post">
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Phone Number Input -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        <br><br>
+
+        <!-- Date Input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Number Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" required>
+        <br><br>
+
+        <!-- Range Input -->
+        <label for="rating">Rating (1 to 5):</label>
+        <input type="range" id="rating" name="rating" min="1" max="5" value="3">
+        <br><br>
+
+        <!-- Checkbox Input -->
+        <label>
+            <input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter
+        </label>
+        <br><br>
+
+        <!-- Radio Button Input -->
+        <label>Gender:</label>
+        <label>
+            <input type="radio" name="gender" value="male" required> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female" required> Female
+        </label>
+        <br><br>
+
+        <!-- Select Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+        </select>
+        <br><br>
+
+        <!-- Textarea Input -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+        <!-- Reset Button -->
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
+        
+   
+

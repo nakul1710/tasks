@@ -1,0 +1,102 @@
+1. Text Areas (<textarea> element): 
+Question:a Create a text area input in form created in question 2 where users can enter comments or feedback. How can you set the number of rows and columns displayed in the text area?
+Ans: To add a textarea element for users to enter comments or feedback, you can include it within the form.
+You can set the number of rows and columns displayed by using the rows and cols attributes, which
+define the height and width of the text area.
+<textarea id="comments" name="comments" rows="5" cols="50">
+  </textarea><br>
+
+Question:b How would you limit the maximum number of characters a user can input in a <textarea> using HTML attributes?
+Ans: You can limit the maximum number of characters a user can input in a <textarea> by using the maxlength
+ attribute. Here’s how you would do it:
+ <form>
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments" rows="5" cols="50" maxlength="200"></textarea><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+In this example:
+maxlength="200" ensures that users cannot enter more than 200 characters into the text area.
+
+
+2.Select Menus (<select> and <option> elements): 
+
+Question:a Construct a select menu in form created in question2  that allows users to choose their favourite programming language from a list of options.
+Ans: To create a select menu in the form from Question 2 that allows users to choose their favorite
+ programming language, we can use the <select> element. Here's the updated form:
+ <form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br>
+
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments" rows="5" cols="50"></textarea><br><br>
+
+  <label for="language">Choose your favorite programming language:</label>
+  <select id="language" name="language">
+    <option value="python">Python</option>
+    <option value="javascript">JavaScript</option>
+    <option value="java">Java</option>
+    <option value="csharp">C#</option>
+    <option value="cpp">C++</option>
+  </select><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+Question:b Explain the purpose of the <optgroup> element within a <select> menu and provide an example of
+ how it can be used.
+Ans: The <optgroup> element is used to group related options inside a <select> menu. This is helpful when
+  you want to organize large lists into subcategories, making it easier for users to find what they need.
+  Each group has a label that describes the options it contains.
+  ex- <form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br>
+
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments" rows="5" cols="50"></textarea><br><br>
+
+  <label for="language">Choose your favorite programming language:</label>
+  <select id="language" name="language">
+    <optgroup label="Web Development">
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="javascript">JavaScript</option>
+    </optgroup>
+    <optgroup label="General Purpose">
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="cpp">C++</option>
+    </optgroup>
+  </select><br><br>
+
+  <input type="submit" value="Submit">
+  </form>
+
+4. Form Submission and Processing (<input type="submit">, <button>, form actions, etc.): 
+
+Question:a How do you create a submit button in an HTML form?
+Ans: <form>
+  <!-- Other form inputs go here -->
+  <input type="submit" value="Submit">
+</form>
+
+Question:b Describe the role of the action attribute in the <form> element and how it specifies where form data is sent.
+Ans: The action attribute in the <form> element specifies the URL to which the form data will be sent
+ once the user submits the form. It tells the browser where to direct the data for processing, whether
+  it's a server, API endpoint, or another page.
+  ex- 
+  <form action="/submit-data" method="post">
+  <!-- form inputs -->
+  <input type="submit" value="Submit">
+  </form>
+
+  Usage with Different Methods:
+  Combined with the method attribute (e.g., GET or POST), the action attribute defines how the form data will be submitted.
+
+
